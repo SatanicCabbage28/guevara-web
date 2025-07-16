@@ -387,20 +387,20 @@ body {
 
 
 .custom-cursor {
-    cursor: url("C:/Users/domiz/OneDrive/Desktop/guevara-web/hello kitty/cursor/Hello Kitty.cur"), auto;
+    cursor: url("hello-kitty/cursor/HelloKitty.cur"), auto;
 }
 .interactive-element:hover {
-    cursor: url("C:/Users/domiz/OneDrive/Desktop/guevara-web/hello kitty/cursor/alt select.cur"), pointer;
+    cursor: url("hello-kitty/cursor/alt-select.cur"), pointer;
 }
 a, button {
-    cursor: url("C:/Users/domiz/OneDrive/Desktop/guevara-web/hello kitty/cursor/alt select.cur"), auto;
+    cursor: url("hello-kitty/cursor/alt-select.cur"), auto;
 }
 .topbar .navbar button,
 .profile-actions button {
-    cursor: url("C:/Users/domiz/OneDrive/Desktop/guevara-web/hello kitty/cursor/alt select.cur"), auto;
+    cursor: url("hello-kitty/cursor/alt-select.cur"), auto;
 }
 .playlists .playlist {
-    cursor: url("C:/Users/domiz/OneDrive/Desktop/guevara-web/hello kitty/cursor/alt select.cur"), auto;
+    cursor: url("hello-kitty/cursor/alt-select.cur"), auto;
 }
 
 html,
