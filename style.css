@@ -1,0 +1,153 @@
+@font-face {
+    font-family: 'Hello Kitty';
+    src: url(fonts/boldins.otf);
+}
+@font-face {
+    font-family: 'Hello Kitty Bold';
+    src: url(fonts/Cecil34-6L7M.ttf);
+}
+   
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    cursor: url("hello kitty/cursor/Hello Kitty.cur"), auto;
+}
+
+
+#greeting {
+    text-align: center;
+    font-size: 5vw;           
+    font-family: 'Hello Kitty';
+    font-weight: 50;
+    margin-top: 4vw;          
+    height: auto;             
+}
+
+#dear {
+    text-align:start;
+    margin-left: 10.5vw;
+    font-size: 2.5vw;           
+    font-family: 'Hello Kitty';
+    font-weight: 50;
+    margin-top: 2.5vw;          
+}
+
+#message {
+    text-align:inherit;
+    margin-left: 10.5vw;
+    margin-right: 10vw;
+    font-size: 2vw;           
+    font-family: 'Hello Kitty';
+    font-weight: 50;
+    margin-top: 1vw;
+              
+}
+
+#gif1 {
+    position: absolute;
+    top: 0.5vw;
+    right: 2vw;
+    display: block;
+    margin: 0;
+    z-index: 1;
+    rotate: 8deg;
+}
+#gif2 {
+    position: absolute;
+    bottom: 3vw;
+    left: 2vw;
+    display: block;
+    margin: 0;
+    z-index: 1;
+    rotate: -12deg;
+    width: 9vw;
+    height: auto;
+}
+
+
+#returnhome {
+    position: absolute;
+    top: 2vw;
+    left: 2vw;
+    background-color: #d95785;
+    color: #ffffff;
+    border-color: white;
+    border: solid 2px;
+    border-radius: 100px;
+    padding: .8vw 2.2vw;         
+    font-size: 1.1vw;           
+    font-family: 'Hello Kitty';
+}
+
+#welcome {
+    text-align: center;
+    font-size: 7vw;   
+    font-family: 'Hello Kitty Bold';
+    color: #ffffff;
+    border-radius: 1000000px;
+    border-color: #d9578500;
+    padding-right: 1vw;  
+    padding-top: 8vw;       
+    font-weight: 500;
+    text-wrap:calc(100% - 2vw);
+}
+
+.try span:nth-of-type(even) {
+    color: #E50020;
+}
+.try span:nth-of-type(odd) {
+    color: #0075C1;
+}
+
+#welcomegif {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tospotify{
+    position: absolute;
+    bottom: 2vw;
+    right: 2vw;
+    background-color: #d95785;
+    color: #ffffff;
+    border-color: white;
+    border: solid 2px;
+    border-radius: 100px;
+    padding: .8vw 2.2vw;         
+    font-size: 1.1vw;           
+    font-family: 'Hello Kitty';
+}
+
+
+.custom-cursor {
+    cursor: url("C:/Users/domiz/OneDrive/Desktop/guevara-web/hello kitty/cursor/Hello Kitty.cur"), auto;
+}
+.interactive-element:hover {
+    cursor: url("C:/Users/domiz/OneDrive/Desktop/guevara-web/hello kitty/cursor/alt select.cur"), pointer;
+}
+a, button {
+    cursor: url("C:/Users/domiz/OneDrive/Desktop/guevara-web/hello kitty/cursor/alt select.cur"), auto;
+}
+html,
+body {
+    cursor: url("hello kitty/cursor/Hello Kitty.cur"), auto;
+}
+
+
+@media (max-width: 600px) {
+    #greeting, #welcome {
+        font-size: 12vw;
+        padding-top: 10vw;
+    }
+    #returnhome {
+        font-size: 5vw;
+        padding: 3vw 6vw;
+    }
+}
+
