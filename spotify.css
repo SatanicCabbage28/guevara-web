@@ -10,21 +10,26 @@
             font-family: 'SpotifyMix-Medium';
             src: url(fonts/spotify/SpotifyMix-Medium.ttf);
         }
+@font-face {
+            font-family: 'SpotifyMix-Regular';
+            src: url(fonts/spotify/SpotifyMix-Regular.ttf);
+        }
+
 
 body {
     cursor: url("hello-kitty/cursor/HelloKitty.cur"), auto;
 }
 
 body {
-            background: linear-gradient(180deg, #E3B50C 0%,  #000000 70%);
+            background: linear-gradient(180deg,   #caa00b 0%,  #000000 68%);
             color: #fff;
             font-family: 'SpotifyMix-Medium';
             margin: 0;
             padding: 0;
         }
         .profile-header-bg {
-            background: linear-gradient(180deg, #E3B50C 0%, #413303 150%);
-            padding: 48px 0 24px 0;
+            background: linear-gradient(180deg, #E3B50C 0%, #413303 125%);
+            padding: 28px 0 28px 0;
             display: flex;
             align-items: flex-end;
             gap: 30px;
@@ -35,7 +40,7 @@ body {
             border-radius: 50%;
             object-fit: cover;
             margin-left: 2vw;
-            box-shadow: 0 4px 32px rgba(0,0,0,0.7);
+            box-shadow: 0 4px 40px rgba(0, 0, 0, 0.635);
         }
         .profile-info {
             display: flex;
@@ -43,12 +48,12 @@ body {
             justify-content: flex-end;
         }
         .profile-type {
-            font-size: 0.81em;
+            font-size: 0.82em;
             letter-spacing: 2px;
             color: #ffffff;
-            margin-bottom: 12px;
             font-family: 'SpotifyMix-Medium';
             letter-spacing: 0em;
+            margin-left: 2px;
         }
         .profile-name {
             font-size: 6.1em;
@@ -67,14 +72,15 @@ body {
             font-family: 'SpotifyMix-Medium';
         }
         .profile-actions {
-            margin-top: 15px;
+            margin-top: 40px;
+            margin-left: 32px;
         }
         .profile-actions button {
             background: none;
             border: 1px solid #b9b9b9;
             color: #ffffff;
             border-radius: 24px;
-            padding: 10px 25px;
+            padding: 9.5px 20px;
             font-size: .85em;
             font-weight: bold;
             cursor: pointer;
@@ -87,11 +93,12 @@ body {
             max-width: 1100px;
             margin: 40px auto 0 auto;
             padding: 0 32px 32px 32px;
+            font-family: "SpotifyMix-Medium";
         }
         .section-title {
             font-size: 1.5em;
             font-weight: bold;
-            margin-bottom: 24px;
+            margin-bottom: 8px;
         }
         .playlists {
             display: grid;
@@ -217,8 +224,9 @@ body {
   text-decoration: underline;
 }
 
+
 .main-container {
-  margin-left: 245px;
+  margin-left: 244px;
   margin-bottom: 60px;
 }
 
@@ -291,8 +299,9 @@ body {
 }
 .spotify-playlists h2 {
   color: #ffffff;
-  font-size: 22px;
+  font-size: 18px;
   margin-bottom: 20px;
+  font-family: 'SpotifyMix-Medium';
 }
 .spotify-playlists .list {
   display: flex;
@@ -307,31 +316,38 @@ body {
   border-radius: 6px;
   cursor: pointer;
   transition: all ease 0.4s;
+  font-family: 'SpotifyMix-Medium';
 }
 .spotify-playlists .list .item:hover {
   background-color: #252525;
 }
 .spotify-playlists .list .item img {
-  width: 100%;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
   border-radius: 6px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 .spotify-playlists .list .item .play {
   position: relative;
+  font-family: 'SpotifyMix-Medium';
 }
 .spotify-playlists .list .item .play .fa {
   position: absolute;
   right: 10px;
   top: -60px;
-  padding: 18px;
+  padding: 13px;
+  padding-left: 15px;
   background-color: #1db954;
-  border-radius: 100%;
+  border-radius: 150%;
   opacity: 0;
   transition: all ease 0.4s;
+  color: black;
 }
 .spotify-playlists .list .item:hover .play .fa {
   opacity: 1;
   transform: translateY(-20px);
+  color: black;
 }
 .spotify-playlists .list .item h4 {
   color: #ffffff;
@@ -340,12 +356,13 @@ body {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  font-family: 'SpotifyMix-Regular';
 }
 .spotify-playlists .list .item p {
   color: #989898;
   font-size: 12px;
   line-height: 20px;
-  font-weight: 600;
+  font-family: 'SpotifyMix-Medium';
 }
 .spotify-playlists hr {
   margin: 70px 0px 0px;

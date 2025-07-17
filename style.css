@@ -80,7 +80,7 @@ body {
     border: solid 2px;
     border-radius: 100px;
     padding: .8vw 2.2vw;         
-    font-size: 1.1vw;           
+    font-size: 1.4vw;           
     font-family: 'Hello Kitty';
 }
 
@@ -91,37 +91,85 @@ body {
     color: #ffffff;
     border-radius: 1000000px;
     border-color: #d9578500;
-    padding-right: 1vw;  
-    padding-top: 8vw;       
+    padding-right: 1vw;   
     font-weight: 500;
-    text-wrap:calc(100% - 2vw);
+    letter-spacing: 3.5px;
+    margin-top: 25px;
 }
 
-.try span:nth-of-type(even) {
+.letters span {
+    display: inline-block;
+    animation: wave-enlarge 2s ease-in-out infinite;
+}
+
+.letters span:nth-of-type(even) {
     color: #E50020;
 }
-.try span:nth-of-type(odd) {
+.letters span:nth-of-type(odd) {
     color: #0075C1;
+}
+
+.letters span:nth-of-type(1) {
+    animation-delay: 0s;
+}
+
+.letters span:nth-of-type(2) {
+    animation-delay: 0.15s;
+}
+
+.letters span:nth-of-type(3) {
+    animation-delay: 0.3s;
+}
+
+.letters span:nth-of-type(4) {
+    animation-delay: 0.45s;
+}
+
+.letters span:nth-of-type(5) {
+    animation-delay: 0.6s;
+}
+
+.letters span:nth-of-type(6) {
+    animation-delay: 0.75s;
+}
+
+.letters span:nth-of-type(7) {
+    animation-delay: 0.9s;
+}
+
+.letters span:nth-of-type(8) {
+    animation-delay: 1.05s;
+}
+
+.letters span:nth-of-type(9) {
+    animation-delay: 1.2s;
+}
+
+.letters span:nth-of-type(10) {
+    animation-delay: 1.35s;
+}
+
+.letters span:nth-of-type(11) {
+    animation-delay: 1.5s;
+}
+
+.letters span:nth-of-type(12) {
+    animation-delay: 1.65s;
+}
+
+@keyframes wave-enlarge {
+    0%, 100% {
+        transform: translateY(0) scale(1);
+    }
+    50% {
+        transform: translateY(-5px) scale(1.09);
+    }
 }
 
 #welcomegif {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-#tospotify{
-    position: absolute;
-    bottom: 2vw;
-    right: 2vw;
-    background-color: #d95785;
-    color: #ffffff;
-    border-color: white;
-    border: solid 2px;
-    border-radius: 100px;
-    padding: .8vw 2.2vw;         
-    font-size: 1.1vw;           
-    font-family: 'Hello Kitty';
 }
 
 
@@ -138,16 +186,3 @@ html,
 body {
     cursor: url("hello-kitty/cursor/HelloKitty.cur"), auto;
 }
-
-
-@media (max-width: 600px) {
-    #greeting, #welcome {
-        font-size: 12vw;
-        padding-top: 10vw;
-    }
-    #returnhome {
-        font-size: 5vw;
-        padding: 3vw 6vw;
-    }
-}
-
