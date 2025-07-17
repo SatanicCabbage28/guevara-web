@@ -97,10 +97,10 @@ body {
     text-wrap:calc(100% - 2vw);
 }
 
-.try span:nth-of-type(even) {
+#try span:nth-of-type(even) {
     color: #E50020;
 }
-.try span:nth-of-type(odd) {
+#try span:nth-of-type(odd) {
     color: #0075C1;
 }
 
@@ -124,11 +124,10 @@ body {
     font-family: 'Hello Kitty';
 }
 
-
-.custom-cursor {
+#custom-cursor {
     cursor: url("hello-kitty/cursor/HelloKitty.cur"), auto;
 }
-.interactive-element:hover {
+#interactive-element:hover {
     cursor: url("hello-kitty/cursor/alt-select.cur"), pointer;
 }
 a, button {
@@ -139,6 +138,52 @@ body {
     cursor: url("hello-kitty/cursor/HelloKitty.cur"), auto;
 }
 
+html {
+    font-size: 100%;
+}
+body {
+    font-size: 1rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+@media (max-width: 1024px) {
+    #greeting {
+        font-size: 8vw;
+    }
+    #dear {
+        font-size: 4vw;
+    }
+    #message {
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 768px) {
+    #gif1 {
+        width: 12vw;
+    }
+    #gif2 {
+        width: 10vw;
+    }
+    #returnhome {
+        font-size: 3vw;
+        padding: 2vw 4vw;
+    }
+}
+
+@media (max-width: 480px) {
+    #welcome {
+        font-size: 10vw;
+        padding-top: 12vw;
+    }
+    #tospotify {
+        font-size: 2vw;
+        padding: 1vw 3vw;
+    }
+}
 
 @media (max-width: 600px) {
     #greeting, #welcome {
