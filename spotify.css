@@ -19,17 +19,17 @@ body {
             background: linear-gradient(180deg, #E3B50C 0%,  #000000 70%);
             color: #fff;
             font-family: 'SpotifyMix-Medium';
-            padding: 0;
             margin: 0;
+            padding: 0;
         }
-        #profile-header-bg {
+        .profile-header-bg {
             background: linear-gradient(180deg, #E3B50C 0%, #413303 150%);
             padding: 48px 0 24px 0;
             display: flex;
             align-items: flex-end;
             gap: 30px;
         }
-        #profile-pic-large {
+        .profile-pic-large {
             width: 240px;
             height: 240px;
             border-radius: 50%;
@@ -37,12 +37,12 @@ body {
             margin-left: 2vw;
             box-shadow: 0 4px 32px rgba(0,0,0,0.7);
         }
-        #profile-info {
+        .profile-info {
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
         }
-        #profile-type {
+        .profile-type {
             font-size: 0.81em;
             letter-spacing: 2px;
             color: #ffffff;
@@ -50,7 +50,7 @@ body {
             font-family: 'SpotifyMix-Medium';
             letter-spacing: 0em;
         }
-        #profile-name {
+        .profile-name {
             font-size: 6.1em;
             font-weight: 400;
             margin: 0 0 12px 0;
@@ -59,17 +59,17 @@ body {
             top:100px;
             
         }
-        #profile-meta {
+        .profile-meta {
             color: #ffffff;
             font-size: .81em;
             margin-bottom: 10px;
             font-weight: 550;
             font-family: 'SpotifyMix-Medium';
         }
-        #profile-actions {
+        .profile-actions {
             margin-top: 15px;
         }
-        #profile-actions button {
+        .profile-actions button {
             background: none;
             border: 1px solid #b9b9b9;
             color: #ffffff;
@@ -80,25 +80,25 @@ body {
             cursor: pointer;
             transition: background 0.2s;
         }
-        #profile-actions button:hover {
+        .profile-actions button:hover {
             border-color: white;
         }
-        #playlists-section {
+        .playlists-section {
             max-width: 1100px;
             margin: 40px auto 0 auto;
             padding: 0 32px 32px 32px;
         }
-        #section-title {
+        .section-title {
             font-size: 1.5em;
             font-weight: bold;
             margin-bottom: 24px;
         }
-        #playlists {
+        .playlists {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
             gap: 32px;
         }
-        #playlist {
+        .playlist {
             background: #181818;
             border-radius: 12px;
             padding: 20px;
@@ -106,10 +106,10 @@ body {
             transition: background 0.2s;
             cursor: pointer;
         }
-        #playlist:hover {
+        .playlist:hover {
             background: #232323;
         }
-        #playlist img {
+        .playlist img {
             width: 100%;
             height: 180px;
             border-radius: 8px;
@@ -117,27 +117,27 @@ body {
             margin-bottom: 16px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.3);
         }
-        #playlist-title {
+        .playlist-title {
             color: #fff;
             font-weight: bold;
             margin-bottom: 6px;
             font-size: 1.1em;
         }
-        #playlist-desc {
+        .playlist-desc {
             color: #b3b3b3;
             font-size: 0.98em;
         }
         @media (max-width: 700px) {
-            #profile-header-bg {
+            .profile-header-bg {
                 flex-direction: column;
                 align-items: center;
                 padding: 32px 0 16px 0;
             }
-            #profile-pic-large {
+            .profile-pic-large {
                 margin-left: 0;
                 margin-bottom: 16px;
             }
-            #playlists-section {
+            .playlists-section {
                 padding: 0 8px 24px 8px;
             }
         }
@@ -151,7 +151,7 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-#sidebar {
+.sidebar {
   position: fixed;
   left: 0;
   top: 0;
@@ -160,75 +160,75 @@ body {
   background-color: #000000;
   padding: 24px;
 }
-#sidebar .logo img {
+.sidebar .logo img {
   width: 130px;
 }
-#sidebar .navigation ul {
+.sidebar .navigation ul {
   list-style: none;
   margin-top: 20px;
 }
-#sidebar .navigation ul li {
+.sidebar .navigation ul li {
   padding: 10px 0px;
 }
-#sidebar .navigation ul li a {
+.sidebar .navigation ul li a {
   color: #b3b3b3;
   text-decoration: none;
   font-weight: bold;
   font-size: 13px;
 }
-#sidebar .navigation ul li a:hover,
-#sidebar .navigation ul li a:active,
-#sidebar .navigation ul li a:focus {
+.sidebar .navigation ul li a:hover,
+.sidebar .navigation ul li a:active,
+.sidebar .navigation ul li a:focus {
   color: #ffffff;
 }
-#sidebar .navigation ul li a:hover .fa,
-#sidebar .navigation ul li a:active .fa,
-#sidebar .navigation ul li a:focus .fa {
+.sidebar .navigation ul li a:hover .fa,
+.sidebar .navigation ul li a:active .fa,
+.sidebar .navigation ul li a:focus .fa {
   color: #b3b3b3;
 }
-#sidebar .navigation ul li .fa {
+.sidebar .navigation ul li .fa {
   font-size: 20px;
   margin-right: 10px;
 }
-#sidebar .navigation ul li a:hover .fa:hover,
-#sidebar .navigation ul li a:hover .fa:active,
-#sidebar .navigation ul li a:hover .fa:focus {
+.sidebar .navigation ul li a:hover .fa:hover,
+.sidebar .navigation ul li a:hover .fa:active,
+.sidebar .navigation ul li a:hover .fa:focus {
   color: #ffffff;
 }
-#sidebar .policies {
+.sidebar .policies {
   position: absolute;
   bottom: 100px;
 }
-#sidebar .policies ul {
+.sidebar .policies ul {
   list-style: none;
 }
-#sidebar .policies ul li {
+.sidebar .policies ul li {
   padding-bottom: 5px;
 }
-#sidebar .policies ul li a {
+.sidebar .policies ul li a {
   color: #b3b3b3;
   font-weight: 500;
   text-decoration: none;
   font-size: 10px;
 }
-#sidebar .policies ul li a:hover,
-#sidebar .policies ul li a:active,
-#sidebar .policies ul li a:focus {
+.sidebar .policies ul li a:hover,
+.sidebar .policies ul li a:active,
+.sidebar .policies ul li a:focus {
   text-decoration: underline;
 }
 
-#main-container {
+.main-container {
   margin-left: 245px;
   margin-bottom: 60px;
 }
 
-#topbar {
+.topbar {
   display: flex;
   justify-content: space-between;
   background-color: #101010;
-  padding: 15px 25px;
+  padding: 14px 25px;
 }
-#topbar .prev-next-buttons button {
+.topbar .prev-next-buttons button {
   color: #7a7a7a;
   width: 34px;
   height: 34px;
@@ -238,39 +238,39 @@ body {
   background-color: #090909;
   margin-right: 10px;
 }
-#topbar #navbar {
+.topbar .navbar {
   display: flex;
   align-items: center;
   padding-left: 0px;
 }
-#topbar #navbar ul {
+.topbar .navbar ul {
   list-style: none;
 }
-#topbar #navbar ul li {
+.topbar .navbar ul li {
   display: inline-block;
   margin: 0px 8px;
   width: 70px;
 }
-#topbar #navbar ul li a {
+.topbar .navbar ul li a {
   color: #b3b3b3;
   text-decoration: none;
   font-weight: bold;
   font-size: 14px;
   letter-spacing: 1px;
 }
-#topbar #navbar ul li a:hover,
-#topbar #navbar ul li a:active,
-#topbar #navbar ul li a:focus {
+.topbar .navbar ul li a:hover,
+.topbar .navbar ul li a:active,
+.topbar .navbar ul li a:focus {
   color: #ffffff;
   font-size: 15px;
 }
-#topbar #navbar ul li.divider {
+.topbar .navbar ul li.divider {
   color: #ffffff;
   font-size: 26px;
   margin: 0px 20px;
   width: auto;
 }
-#topbar #navbar button {
+.topbar .navbar button {
   background-color: #ffffff;
   color: #000000;
   font-size: 16px;
@@ -281,25 +281,25 @@ body {
   cursor: pointer;
   margin-left: 20px;
 }
-#topbar #navbar button:hover,
-#topbar #navbar button:active,
-#topbar #navbar button:focus {
+.topbar .navbar button:hover,
+.topbar .navbar button:active,
+.topbar .navbar button:focus {
   background-color: #f2f2f2;
 }
-#spotify-playlists {
+.spotify-playlists {
   padding: 20px 40px;
 }
-#spotify-playlists h2 {
+.spotify-playlists h2 {
   color: #ffffff;
   font-size: 22px;
   margin-bottom: 20px;
 }
-#spotify-playlists .list {
+.spotify-playlists .list {
   display: flex;
   gap: 20px;
   overflow: hidden;
 }
-#spotify-playlists .list .item {
+.spotify-playlists .list .item {
   min-width: 140px;
   width: 160px;
   padding: 15px;
@@ -308,18 +308,18 @@ body {
   cursor: pointer;
   transition: all ease 0.4s;
 }
-#spotify-playlists .list .item:hover {
+.spotify-playlists .list .item:hover {
   background-color: #252525;
 }
-#spotify-playlists .list .item img {
+.spotify-playlists .list .item img {
   width: 100%;
   border-radius: 6px;
   margin-bottom: 10px;
 }
-#spotify-playlists .list .item .play {
+.spotify-playlists .list .item .play {
   position: relative;
 }
-#spotify-playlists .list .item .play .fa {
+.spotify-playlists .list .item .play .fa {
   position: absolute;
   right: 10px;
   top: -60px;
@@ -329,11 +329,11 @@ body {
   opacity: 0;
   transition: all ease 0.4s;
 }
-#spotify-playlists .list .item:hover .play .fa {
+.spotify-playlists .list .item:hover .play .fa {
   opacity: 1;
   transform: translateY(-20px);
 }
-#spotify-playlists .list .item h4 {
+.spotify-playlists .list .item h4 {
   color: #ffffff;
   font-size: 14px;
   margin-bottom: 10px;
@@ -341,33 +341,31 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-#spotify-playlists .list .item p {
+.spotify-playlists .list .item p {
   color: #989898;
   font-size: 12px;
   line-height: 20px;
   font-weight: 600;
 }
-#spotify-playlists hr {
+.spotify-playlists hr {
   margin: 70px 0px 0px;
   border-color: #636363;
 }
 
-
-
-#custom-cursor {
+.custom-cursor {
     cursor: url("hello-kitty/cursor/HelloKitty.cur"), auto;
 }
-#interactive-element:hover {
+.interactive-element:hover {
     cursor: url("hello-kitty/cursor/alt-select.cur"), pointer;
 }
 a, button {
     cursor: url("hello-kitty/cursor/alt-select.cur"), auto;
 }
 .topbar .navbar button,
-#profile-actions button {
+.profile-actions button {
     cursor: url("hello-kitty/cursor/alt-select.cur"), auto;
 }
-#playlists #playlist {
+.playlists .playlist {
     cursor: url("hello-kitty/cursor/alt-select.cur"), auto;
 }
 
@@ -376,52 +374,75 @@ body {
     cursor: url("hello-kitty/cursor/HelloKitty.cur"), auto;
 }
 
-html {
-    font-size: 100%;
-}
-body {
-    font-size: 1rem;
+@media (max-width: 1200px) {
+  .main-container {
+    margin-left: 200px;
+  }
+  .sidebar {
+    width: 180px;
+  }
+  .topbar .navbar ul li {
+    width: 60px;
+  }
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
-@media (max-width: 1024px) {
-    #sidebar {
-        width: 150px;
-    }
-    .main-container {
-        margin-left: 160px;
-    }
-    .topbar {
-        padding: 10px 20px;
-    }
+@media (max-width: 992px) {
+  .main-container {
+    margin-left: 160px;
+  }
+  .sidebar {
+    width: 150px;
+  }
+  .profile-header-bg {
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 0 16px 0;
+  }
+  .profile-pic-large {
+    margin-left: 0;
+    margin-bottom: 16px;
+  }
+  .playlists-section {
+    padding: 0 16px 24px 16px;
+  }
 }
 
 @media (max-width: 768px) {
-    #profile-header-bg {
-        flex-direction: column;
-        align-items: center;
-        padding: 20px 0;
-    }
-    #profile-pic-large {
-        width: 180px;
-        height: 180px;
-    }
-    #playlists-section {
-        padding: 0 16px;
-    }
+  .main-container {
+    margin-left: 0;
+  }
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 16px;
+  }
+  .topbar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .topbar .navbar ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .playlists {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
 }
 
-@media (max-width: 480px) {
-    profile-name {
-        font-size: 4em;
-    }
-    #playlist {
-        padding: 10px;
-    }
-    #playlist img {
-        height: 120px;
-    }
+@media (max-width: 576px) {
+  .profile-name {
+    font-size: 4em;
+  }
+  .profile-meta {
+    font-size: 0.7em;
+  }
+  .profile-actions button {
+    padding: 8px 20px;
+    font-size: 0.75em;
+  }
+  .playlists-section {
+    padding: 0 8px 16px 8px;
+  }
 }

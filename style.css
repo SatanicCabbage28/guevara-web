@@ -97,10 +97,10 @@ body {
     text-wrap:calc(100% - 2vw);
 }
 
-#try span:nth-of-type(even) {
+.try span:nth-of-type(even) {
     color: #E50020;
 }
-#try span:nth-of-type(odd) {
+.try span:nth-of-type(odd) {
     color: #0075C1;
 }
 
@@ -124,10 +124,11 @@ body {
     font-family: 'Hello Kitty';
 }
 
-#custom-cursor {
+
+.custom-cursor {
     cursor: url("hello-kitty/cursor/HelloKitty.cur"), auto;
 }
-#interactive-element:hover {
+.interactive-element:hover {
     cursor: url("hello-kitty/cursor/alt-select.cur"), pointer;
 }
 a, button {
@@ -144,6 +145,7 @@ html {
 body {
     font-size: 1rem;
 }
+
 
 img {
     max-width: 100%;
@@ -194,5 +196,78 @@ img {
         font-size: 5vw;
         padding: 3vw 6vw;
     }
+}
+
+@media (max-width: 1200px) {
+  #main-container {
+    margin-left: 200px;
+  }
+  #sidebar {
+    width: 180px;
+  }
+  #topbar #navbar ul li {
+    width: 60px;
+  }
+}
+
+@media (max-width: 992px) {
+  #main-container {
+    margin-left: 160px;
+  }
+  #sidebar {
+    width: 150px;
+  }
+  #profile-header-bg {
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 0 16px 0;
+  }
+  #profile-pic-large {
+    margin-left: 0;
+    margin-bottom: 16px;
+  }
+  #playlists-section {
+    padding: 0 16px 24px 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  #main-container {
+    margin-left: 0;
+  }
+  #sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 16px;
+  }
+  #topbar {
+    flex-direction: column;
+    align-items: center;
+  }
+  #topbar #navbar ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #playlists {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+}
+
+@media (max-width: 576px) {
+  #profile-name {
+    font-size: 4em;
+  }
+  #profile-meta {
+    font-size: 0.7em;
+  }
+  #profile-actions button {
+    padding: 8px 20px;
+    font-size: 0.75em;
+  }
+  #playlists-section {
+    padding: 0 8px 16px 8px;
+  }
 }
 
