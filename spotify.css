@@ -48,28 +48,26 @@ body {
             justify-content: flex-end;
         }
         .profile-type {
-            font-size: 0.82em;
-            letter-spacing: 2px;
+            font-size: 0.83em;
             color: #ffffff;
-            font-family: 'SpotifyMix-Medium';
-            letter-spacing: 0em;
-            margin-left: 2px;
+            font-family: 'SpotifyMix-Regular';
+
         }
         .profile-name {
             font-size: 6.1em;
             font-weight: 400;
-            margin: 0 0 12px 0;
             letter-spacing: -0.03em;
             font-family: 'SpotifyMix-Extrabold';
-            top:100px;
+            top:120px;
             
         }
         .profile-meta {
             color: #ffffff;
-            font-size: .81em;
+            font-size: .84em;
             margin-bottom: 10px;
             font-weight: 550;
-            font-family: 'SpotifyMix-Medium';
+            font-family: 'SpotifyMix-Regular';
+            left: 10px;
         }
         .profile-actions {
             margin-top: 40px;
@@ -77,7 +75,7 @@ body {
         }
         .profile-actions button {
             background: none;
-            border: 1px solid #b9b9b9;
+            border: 1px solid #a5a5a5;
             color: #ffffff;
             border-radius: 24px;
             padding: 9.5px 20px;
@@ -245,6 +243,7 @@ body {
   border: 0px;
   background-color: #090909;
   margin-right: 10px;
+  margin-top: 5px;
 }
 .topbar .navbar {
   display: flex;
@@ -258,6 +257,7 @@ body {
   display: inline-block;
   margin: 0px 8px;
   width: 70px;
+  margin-bottom: 10px;
 }
 .topbar .navbar ul li a {
   color: #b3b3b3;
