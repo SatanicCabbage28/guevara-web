@@ -180,6 +180,7 @@ body {
   text-decoration: none;
   font-weight: bold;
   font-size: 13px;
+  font-family: 'SpotifyMix-Medium';
 }
 .sidebar .navigation ul li a:hover,
 .sidebar .navigation ul li a:active,
@@ -264,7 +265,7 @@ body {
   text-decoration: none;
   font-weight: bold;
   font-size: 14px;
-  letter-spacing: 1px;
+  font-family: 'SpotifyMix-Medium';
 }
 .topbar .navbar ul li a:hover,
 .topbar .navbar ul li a:active,

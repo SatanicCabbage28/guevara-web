@@ -121,39 +121,60 @@
         <div class="list">
           <div class="item">
             <img src="hello-kitty/imgs/3d856232-7878-4c40-bcd1-8343dae1f44c.jpeg" />
-            <div class="play">
+            <div class="play" onclick="playSong('audio1')">
               <span class="fa fa-play"></span>
             </div>
+            <audio id="audio1" src="songs/Sunshine&Rain.mp3"></audio>
             <h4>Memories</h4>
             <p>A place for some of my favourite memories of us.</p>
           </div>
 
           <div class="item">
             <img src="hello-kitty/imgs/IMG_4970.jpg" />
-            <div class="play">
+            <div class="play" onclick="playSong('audio2')">
               <span class="fa fa-play"></span>
             </div>
+            <audio id="audio2" src="songs/Starships.mp3"></audio>
             <h4>Voucher</h4>
             <p>Redeemable voucher for us to fly anywhere in the world.</p>
           </div>
 
           <div class="item">
             <img src="hello-kitty/imgs/picofmonthjuly25.jpeg" />
-            <div class="play">
+            <div class="play" onclick="playSong('audio3')">
               <span class="fa fa-play"></span>
             </div>
+            <audio id="audio3" src="songs/Rock-Your-Body.mp3"></audio>
             <h4>Diva of the month</h4>
             <p>This is awarded to my favourite picture of you this month.</p>
           </div>
 
           <div class="item">
             <img src="hello-kitty/imgs/pompom.gif" />
-            <div class="play">
+            <div class="play" onclick="playSong('audio4')">
               <span class="fa fa-play"></span>
             </div>
+            <audio id="audio4" src="songs/20190723.mp3"></audio>
             <h4>Expansion ideas</h4>
             <p>My place for you to see what I'm still working on, on this website (a lot)!</p>
           </div>
+          <script>
+            function playSong(audioId) {
+              var audio = document.getElementById(audioId);
+              document.querySelectorAll('audio').forEach(function(a) {
+                if (a !== audio) {
+                  a.pause();
+                  a.currentTime = 0;
+                }
+              });
+              audio.volume = 0.2;
+              if (audio.paused) {
+                audio.play();
+              } else {
+                audio.pause();
+              }
+            }
+</script>
         </div>
       </div>
 </body>
